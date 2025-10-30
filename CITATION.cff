@@ -1,25 +1,28 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-title: "CollectionBuilder-CSV"
+title: "OMnibus of Mantras"
 type: software
 authors:
-  - family-names: Williamson
-    given-names: Evan Peter
-    orcid: https://orcid.org/0000-0002-7990-9924
-  - family-names: Becker
-    given-names: Devin
-    orcid: https://orcid.org/0000-0002-0974-9064
-  - family-names: Wikle
-    given-names: Olivia
-    orcid: https://orcid.org/0000-0001-8122-4169
-repository-code: 'https://github.com/CollectionBuilder/collectionbuilder-csv'
-url: 'https://collectionbuilder.github.io/'
+  - family-names: Schwarzkopf
+    given-names: Edda Sofie
+    orcid: https://orcid.org/0009-0006-6964-747X
+  - family-names: Kaminski
+    given-names: Steve
+    orcid: https://orcid.org/0000-0002-0047-8819
+  - family-names: Larios
+    given-names: Borayin
+    orcid: https://orcid.org/0000-0001-7237-9089
+  - family-names: Lorea
+    given-names: Carola
+    orcid: https://orcid.org/0000-0003-3593-7023
+  - family-names: Gerety
+    given-names: Finnian M. M.
+    orcid: https://orcid.org/0000-0002-1521-1797
+repository-code: 'https://github.com/mantrams-erc/omnibus-cb-csv'
+url: 'https://omnibus.mantrams.eu'
 license: MIT
 version: 1+
-date-released: '2021-04-25'
+date-released: '2026-03-01'
 abstract: >-
-  CollectionBuilder is an open source tool for
-  creating digital collection and exhibit websites
-  that are driven by metadata and powered by modern
-  static web technology.
+  The OMnibus of Mantras is a multimedia digital archive of mantras past and present, developed as part of the ERC-funded research project MANTRAMS - Mantras in Religion, Media, and Society in Global Southern Asia (ERC Synergy Grant ID 101118934).
 license: MIT

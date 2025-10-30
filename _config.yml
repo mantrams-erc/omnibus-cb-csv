@@ -8,26 +8,26 @@
 # URL VARIABLES
 #
 # site domain, full URL to the production location of your collection
-url: 
+url: https://omnibus.mantrams.eu
 # path to location on the domain if necessary e.g. /digital/hjccc
 baseurl: 
 # location of code, the full url to your github repository
-source-code: https://github.com/CollectionBuilder/collectionbuilder-csv
+source-code: https://github.com/mantrams-erc/omnibus-cb-csv
 
 ##########
 # SITE SETTINGS
 #
 # title of site appears in banner
-title: CollectionBuilder CSV
+title: OMnibus of Mantras
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: Digital Collection Magic with Static Web Technologies
+tagline: A digital archive of mantras past and present
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "CollectionBuilder-CSV is a template for creating digital collection exhibits using static web technology."
+description: "The OMnibus of Mantras is a digital archive of mantras past and present, developed as part of the MANTRAMS research project (ERC Synergy Grant ID 101118934)."
 # keywords, a short list of subjects describing the collection, separated by semicolon, to appear in rich markup
-keywords: idaho; history; inland northwest
+keywords: cultural-heritage; ethnography; religious-studies; south-asia
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
-author: CollectionBuilder
+author: mantrams-erc
 
 ##########
 # COLLECTION SETTINGS
@@ -50,11 +50,11 @@ metadata: demo-compoundobjects-metadata
 #
 # Enter name and link for your organization (replacing the name and links below)
 # These values will be used in attribution and data 
-organization-name: "Center for Digital Inquiry and Learning (CDIL)"
-organization-link: https://cdil.lib.uidaho.edu/
+organization-name: "MANTRAMS - Mantras in Religion, Media, and Society in Global Southern Asia"
+organization-link: https://mantrams.eu
 # Add logo image links if you would like them to appear in banner and footer. Delete or leave blank to remove logos.
-organization-logo-banner: https://www.lib.uidaho.edu/collectionbuilder/cdil-black.png
-organization-logo-nav: https://www.lib.uidaho.edu/collectionbuilder/cdil-white.png
+organization-logo-banner: assets/img/mantrams-logo.png
+organization-logo-nav: assets/img/omnibus-logo.png
 
 ##########
 # ROBOTS EXCLUDE

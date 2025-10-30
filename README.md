@@ -1,23 +1,20 @@
-# CollectionBuilder-CSV
+# The OMnibus of MANTRAMS
 
-CollectionBuilder-CSV is a robust and flexible "stand alone" template for creating digital collection and exhibit websites using Jekyll and a metadata CSV.
-Driven by your collection metadata, the template generates engaging visualizations to browse and explore your objects.
-The resulting static site can be hosted on any basic web server (or built automatically using GitHub Actions).
+The OMnibus of Mantras is a core output of the interdisciplinary and transnational research project [MANTRAMS - Mantras in Religion, Media, and Society in Global Southern Asia](https://mantrams.eu) (ERC Synergy Grant ID ID 101118934, project runtime 2024-2030). 
 
-Visit the [CollectionBuilder Docs](https://collectionbuilder.github.io/cb-docs/) for step-by-step details for getting started and building collections!
+MANTRAMS is a pioneering, large-scale research project entirely dedicated to mantras, past and present; jointly hosted by the University of Oxford, the University of Vienna, and the University of Tübingen. It will investigate mantras — sacred utterances, formulas, and powerful syllables originating in the religious traditions of early India and then spread via practitioners, texts, rituals, and iconography —, examining the roots of mantra in the religions of the Indian subcontinent, their circulation across South and Southeast Asia, and their transcultural significance in global spiritualities today.
 
-## Brief Overview of Building a Collection
+With the OMnibus, we present a curated subset of the material and data collected, produced, and collated under the MANTRAMS umbrella. We strive to create narrative pathways through the material as well as sophisticated search functions for academic research. Conceptualizing the OMnibus mobile-first for a globally disperse audience as well as providing spaces for artistic intervention and immersive elements are core design principles guiding the development processes.
 
-The [CollectionBuilder Docs](https://collectionbuilder.github.io/cb-docs/) contain detailed information about building a collection from start to finish--including installing software, using Git/GitHub, preparing digital objects, and formatting metadata.
-However, here is a super quick overview of the process:
+**We acknowledge our intellectual debt and our gratitude to the gurus, the mantra specialists, the practitioners, and the meditators who have transmitted this knowledge, dynamically, across the centuries, and beyond South Asia. Without them, there would be no MANTRAMS research project. We furthermore recognize the longstanding work of countless Open Source development communities. The OMnibus humbly stands on their giant shoulders.**
 
-- Make your own copy of this template repository by clicking the green "Use this Template" button on GitHub (see [repository set up docs](https://collectionbuilder.github.io/cb-docs/docs/repository/)). This copy of the template is the starting point for your "project repository", i.e. the source code for your digital collection site!
-- Prepare your collection metadata following the CB-CSV template (see our demo [metadata template on Google Sheets](https://docs.google.com/spreadsheets/d/1nN_k4JQB4LJraIzns7WcM3OXK-xxGMQhW1shMssflNM/edit?usp=sharing) and [metadata docs](https://collectionbuilder.github.io/cb-docs/docs/metadata/csv_metadata/)). Your metadata will include links to your digital files (images, pdfs, videos, etc) and thumbnails wherever they are hosted.
-- Add your metadata as a CSV to your project repository's "_data" folder (see [upload metadata docs](https://collectionbuilder.github.io/cb-docs/docs/metadata/uploading/)).
-- Edit your project's "_config.yml" with your collection information (see [site configuration docs](https://collectionbuilder.github.io/cb-docs/docs/config/)). Additional customization is done via a theme file, configuration files, CSS tweaks, and more--however, once your "_config.yml" is edited your site is ready to be previewed. 
-- Generate your site using Jekyll! (see docs for how to [use Jekyll locally](https://collectionbuilder.github.io/cb-docs/docs/repository/generate/) and [deploy on the web](https://collectionbuilder.github.io/cb-docs/docs/deploy/))
+## Core Team
 
-Please feel free to ask questions in the main [CollectionBuilder discussion forum](https://github.com/CollectionBuilder/collectionbuilder.github.io/discussions).
+The OMnibus of Mantras is developed collaboratively by [MANTRAMS](https://mantrams.eu) and the [Digital Humanities Center](https://uni-tuebingen.de/forschung/forschungsinfrastruktur/digital-humanities-center) at the University of Tübingen.
+
+For general questions and feedback, kindly reach out to Edda Schwarzkopf, the MANTRAMS Digital Humanities and Data Management Officer ([edda.schwarzkopf@uni-tuebingen.de](mailto:edda.schwarzkopf@uni-tuebingen.de)).
+
+For questions and concerns about Data Protection, kindly reach out to the MANTRAMS Data Protection Officer ([data@mantrams.eu](mailto:data@mantrams.eu)).
 
 ----------
 
@@ -33,6 +30,14 @@ Metadata visualizations are built using open source libraries such as [DataTable
 Object metadata is exposed using [Schema.org](http://schema.org) and [Open Graph protocol](http://ogp.me/) standards.
 
 Questions can be directed to **collectionbuilder.team@gmail.com**
+
+## CollectionBuilder-CSV
+
+CollectionBuilder-CSV is a robust and flexible "stand alone" template for creating digital collection and exhibit websites using Jekyll and a metadata CSV.
+Driven by your collection metadata, the template generates engaging visualizations to browse and explore your objects.
+The resulting static site can be hosted on any basic web server (or built automatically using GitHub Actions).
+
+Visit the [CollectionBuilder Docs](https://collectionbuilder.github.io/cb-docs/) for step-by-step details for getting started and building collections!
 
 ## License
 
