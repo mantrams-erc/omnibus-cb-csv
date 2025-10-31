@@ -18,12 +18,12 @@ source-code: https://github.com/mantrams-erc/omnibus-cb-csv
 # SITE SETTINGS
 #
 # title of site appears in banner
-title: OMnibus of Mantras
+title: OMnibus of MANTRAMS
 # tagline, a short phrase that will appear throughout the site in the top banner
 tagline: A digital archive of mantras past and present
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "The OMnibus of Mantras is a digital archive of mantras past and present, developed as part of the MANTRAMS research project (ERC Synergy Grant ID 101118934)."
+description: "The OMnibus  is a digital archive of mantras past and present, developed as part of the MANTRAMS research project (ERC Synergy Grant ID 101118934)."
 # keywords, a short list of subjects describing the collection, separated by semicolon, to appear in rich markup
 keywords: cultural-heritage; ethnography; religious-studies; south-asia
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name

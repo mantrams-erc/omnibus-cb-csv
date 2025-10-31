@@ -1,6 +1,6 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
-title: "OMnibus of Mantras"
+message: "If you use this software, feel free to cite it as below."
+title: "OMnibus of MANTRAMS"
 type: software
 authors:
   - family-names: Schwarzkopf
@@ -24,5 +24,5 @@ license: MIT
 version: 1+
 date-released: '2026-03-01'
 abstract: >-
-  The OMnibus of Mantras is a multimedia digital archive of mantras past and present, developed as part of the ERC-funded research project MANTRAMS - Mantras in Religion, Media, and Society in Global Southern Asia (ERC Synergy Grant ID 101118934).
+  The OMnibus is a multimedia digital archive of mantras past and present, developed as part of the ERC-funded research project MANTRAMS - Mantras in Religion, Media, and Society in Global Southern Asia (ERC Synergy Grant ID 101118934).
 license: MIT
