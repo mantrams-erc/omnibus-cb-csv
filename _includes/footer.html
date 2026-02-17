@@ -3,39 +3,34 @@
     <div class="row border-bottom border-white pb-4 mb-2">
 
         <div class="col-md-7 px-4 mt-3">
+            {% if site.organization-logo-nav %}
+            <a href="{{ site.organization-link }}" target="_blank">
+                <img id="footer-logo" class="img-fluid" src="{{ site.organization-logo-nav | relative_url }}"
+                    alt="{{ site.organization-name | escape }} home">
+            </a>
 
-            <h2 class="h4"><a href="{{ '/' | relative_url }}" class="text-white">{{ site.title }}</a></h2>
-            <p class="text-white"><small>{{ site.description }}</small></p>
-            <nav>
-                <ul id="footer-nav" class="nav nav-pills ">
-                    {%- assign navItems = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nil' -%}
-                    {% for nav in navItems %}
-                    <li class="nav-item">
-                    {% if nav.stub %}
-                        <a class="nav-link text-light{% if page.url == nav.stub %} active{% endif %}" href="{{ nav.stub | relative_url }}">{{ nav.display_name }}</a>
-                    {%- else -%}
-                    {% assign childStub = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent == nav.display_name' | first %}
-                        <a class="nav-link text-light{% if page.url == childStub.stub %} active{% endif %}" href="{{ childStub.stub | relative_url }}">{{ nav.display_name }}</a>
-                    {% endif %}
-                    </li>
-                    {%- endfor -%}
-                </ul>
-            </nav>
+            {% endif %}
+            <p class="text-white"><small>"MANTRAMS - Mantras in Religion, Media, and Society in Global Southern Asia" is
+                    conducted at the Universities of Vienna, Oxford and Tübingen. MANTRAMS has received funding from the European Research Council (ERC) under the European Union's Synergy Grant programme <a href="https://cordis.europa.eu/project/id/101118934" target="_blank">(ID
+                    101118934)</a>.</small></p>
+
+            <p class="text-white"><small><b><a href="https://mantrams.eu/impressum/" target="_blank">Impressum</a></b></small><br/><small><b><a href="https://mantrams.eu/data_protection_policy/" target="_blank">Data Protection Policy</a></b></small></p>
+
 
         </div>
 
         <div class="col-md-5 mt-3 text-center">
-
-           {% if site.organization-logo-nav %} <p class="text-md-end">
-                <a href="{{ site.organization-link }}">
-                    <img id="footer-logo" class="img-fluid" src="{{ site.organization-logo-nav | relative_url }}" alt="{{ site.organization-name | escape }} home">
-                </a>
-            </p>
-            {% endif %}
+            <div class="footer-logo">
+                <a href="https://cordis.europa.eu/project/id/101118934" >
+                        <img src="{{ '/assets/img/erc-logo.png' | relative_url }}" class="img-fluid"
+                            alt="ERC Logo and Credit">
+                    </a>
+                </div>
             <p class="text-white text-md-end" id="footer-credits">
                 <small><em>built with</em>
-                    <a href="https://collectionbuilder.github.io/" title="CollectionBuilder">
-                        <img src="{{ '/assets/img/collectionbuilder-logo.png' | relative_url }}" class="img-fluid" alt="CollectionBuilder" >
+                    <a href="https://collectionbuilder.github.io/" target="_blank" title="CollectionBuilder">
+                        <img src="{{ '/assets/img/collectionbuilder-logo.png' | relative_url }}" class="img-fluid"
+                            alt="CollectionBuilder">
                     </a>
                 </small>
             </p>
