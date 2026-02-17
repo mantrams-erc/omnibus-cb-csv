@@ -8,12 +8,14 @@
 #
 # featured image is used in home page banner and in meta markup to represent the collection
 # use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
-featured-image: demo_033
+#featured-image: /assets/img/MANTRAMS_TF3_GOET_RC6_ RAMANANDI-L11009783.jpg
+featured-image: /assets/img/Shirt_Edit.jpeg
+#featured-image: /assets/img/Manuscript01_101_Healing soil.jpg
 featured-image-alt-text: # add alt text if using url for featured-image (objectid will be automatic from metadata)
 # optional: add extra padding around collection title for a larger image feature. 
-home-title-y-padding: 10em # the margin from the top your title portion will appear.
+home-title-y-padding: # the margin from the top your title portion will appear.
 # optional: change position of background image, center, top, bottom
-home-banner-image-position: center # Default is top
+home-banner-image-position: top # Default is top
 
 
 ##########
@@ -107,8 +109,8 @@ bootswatch: # leave blank or comment out for plain bootstrap
 
 # THEME FONTS [optional!]
 base-font-size: 1.2em
-text-color: "#191919"
-link-color: "#0d6efd"
+text-color: "#0D0D0D"
+link-color: "#9f9186"
 base-font-family: "Noto Sans" # comment out for bootstrap defaults. e.g. Roboto
 font-cdn: # add font stylesheet, e.g. <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
