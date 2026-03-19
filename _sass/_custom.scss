@@ -5,7 +5,25 @@
 
 @use "_fonts.scss";
 
-.bg-dark-gradient {
+.omnibus-gradient-header-dark {
+    background-image: radial-gradient(ellipse 800px 500px at calc(50% + 200px) -100px,
+            rgba(0, 0, 0, 0.7) 33%,
+            rgba(0, 0, 0, 0.5) 61%,
+            rgba(0, 0, 0, 0.1) 90%,
+            rgba(0, 0, 0, 0) 100%);
+    height: 20em;
+}
+
+.omnibus-gradient-header-light{
+    background-image: radial-gradient(ellipse 800px 500px at calc(50% + 200px) -100px,
+            rgba(255, 255, 255, 0.7) 33%,
+            rgba(255, 255, 255, 0.5) 61%,
+            rgba(255, 255, 255, 0.1) 90%,
+            rgba(255, 255, 255, 255) 100%);
+    height: 20em;
+}
+
+.omnibus-gradient-header-custom {
     background-image: radial-gradient(ellipse 800px 500px at calc(50% + 200px) -100px,
             rgba(0, 0, 0, 0.7) 33%,
             rgba(0, 0, 0, 0.5) 61%,

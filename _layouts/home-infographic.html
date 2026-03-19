@@ -4,27 +4,35 @@ layout: page
 ---
 <div class="row">
 
-  <div class="col-md-8">
-
-    {% include index/description.html %}
-    {% include index/carousel.html title="Sample Items" %}
-    
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Description</h5>
+        <p class="card-text">The OMnibus of MANTRAMS is a digital archive of mantras past and present. Commodo qui occaecat deserunt ea Lorem enim. Eiusmod nulla commodo id ex cupidatat laborum pariatur est. Ipsum deserunt laboris tempor sint id. Ut excepteur aliqua ullamco ut. Ad id occaecat ex quis duis. Ipsum qui dolore aute minim tempor irure do ut dolore dolor sit et excepteur.</p>
+        <a href="/about.html" class="btn btn-primary">Learn More »</a>
+      </div>
+    </div>
   </div>
-  <div class="col-md-4">  
-
-    {% include index/time.html %}
-
-    {% include index/featured-terms.html field="subject" title="Top Subjects" btn-color="primary" %}
-
-    {% include index/featured-terms.html field="location" title="Locations" btn-color="outline-secondary" %}
-    
-    {% include index/content.html %}
-
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">The MANTRAMS Project</h5>
+        <p class="card-text">MANTRAMS - Mantras in Religion, Media, and Society in Global Southern Asia. Commodo qui occaecat deserunt ea Lorem enim. Eiusmod nulla commodo id ex cupidatat laborum pariatur est. Ipsum deserunt laboris tempor sint id. Ut excepteur aliqua ullamco ut. Ad id occaecat ex quis duis. Ipsum qui dolore aute minim tempor irure do ut dolore dolor sit et excepteur.</p>
+        <a href="https://mantrams.eu" class="btn btn-primary">Learn More »</a>
+      </div>
+    </div>
   </div>
-  <div class="col-md-12">
+</div>
 
-    {% include index/data-download.html %}
+<div class="col-md-12">
 
-  </div>
+<!-- INSERT FEATURED ESSAYS -->
+
+</div>
+<div class="col-md-12">
+
+  {% include index/data-download.html %}
+
+</div>
 
 </div>

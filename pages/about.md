@@ -18,6 +18,10 @@ padding: 6em
 # Look in _includes/feature for options to easily add features to the page
 ---
 
+  {% include index/time.html %}
+
+  {% include index/content.html %}
+
 ## About CollectionBuilder CSV
 
 This demo collection features items from the University of Idaho Library's [Digital Collections](https://www.lib.uidaho.edu/digital/), and is build using [CollectionBuilder-CSV](https://github.com/CollectionBuilder/collectionbuilder-csv).
