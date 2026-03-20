@@ -24,10 +24,11 @@
 }
 
 .omnibus-gradient-header-custom {
+
     background-image: radial-gradient(ellipse 800px 500px at calc(50% + 200px) -100px,
-            rgba(0, 0, 0, 0.7) 33%,
-            rgba(0, 0, 0, 0.5) 61%,
-            rgba(0, 0, 0, 0.1) 90%,
-            rgba(0, 0, 0, 0) 100%);
+            #3557CEB3 33%,
+            #3557CE80 61%,
+            #3557CE1A 90%,
+            #3557CE00 100%);
     height: 20em;
 }

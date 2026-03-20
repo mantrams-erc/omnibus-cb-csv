@@ -4,59 +4,32 @@
         background-image: url('{{ site.data.featured_item.src | relative_url }}');
         background-size: cover;
         background-repeat: no-repeat;
-
-        background-position: {
-                {
-                site.data.theme.home-banner-image-position | default: 'center'
-            }
-        }
-
-        ;
+        background-position: {{site.data.theme.home-banner-image-position | default: 'center'}};
     }
 
     #home-title-box {
-        padding-top: {
-                {
-                site.data.theme.home-title-y-padding | default: '0em'
-            }
-        }
-
-        ;
-
-        padding-bottom: {
-                {
-                site.data.theme.home-title-y-padding | default: '15em'
-            }
-        }
-
-        ;
+        padding-top: {{site.data.theme.home-title-y-padding | default: '0em'}};
+        padding-bottom: {{site.data.theme.home-title-y-padding | default: '15em'}};
     }
 
     @media screen and (max-width: 576px) {
         #home-title-box {
-            padding-top: min({
-                    {
-                    site.data.theme.home-title-y-padding | default: '0em'
-                }
-            }
-
-            , 32vh);
-
-        padding-bottom: min({
-                {
-                site.data.theme.home-title-y-padding | default: '15em'
-            }
+            padding-top: min({{site.data.theme.home-title-y-padding | default: '0em'}}, 32vh);padding-bottom: min({{site.data.theme.home-title-y-padding | default: '15em'}}, 32vh);
         }
-
-        , 32vh);
-    }
     }
 </style>
 <div id="home-banner" class="container-fluid mb-0 p-0">
     <div id="home-title-box" class="position-relative">
         <!-- toggle light and dark theming -->
         {% if page.omnibus-site-theme == "dark" %}
+        <!-- nested: apply different logo shadow options -->
+        {% if page.omnibus-site-logo-gradient == false %}
+        <div class="p-2 px-4 text-center text-white">
+        {% elsif page.omnibus-site-main-color-custom %}
+        <div class="p-2 px-4 text-center text-white omnibus-gradient-header-custom">
+        {% elsif page.omnibus-site-logo-gradient == true %}
         <div class="p-2 px-4 text-center text-white omnibus-gradient-header-dark">
+        {% endif %}
             <a class="d-block mt-4 mb-2" href="{{ site.url }}">
                 <img id="home-banner-logo" class="img-fluid" src="{{ site.organization-logo-nav-white | relative_url }}"
                     alt="{{ site.title | escape }} home">
@@ -65,8 +38,15 @@
             <p class="fs-4 fw-lighter lh-1">{{ site.tagline }}</p>
             <!--<p class="fs-4 fw-lighter">an online archive<br/>of mantras past and present</p>-->
         </div>
-        {% elsif page.omnibus-site-theme =="light" %}
+        {% elsif page.omnibus-site-theme == "light" %}
+        <!-- nested: apply different logo shadow options -->
+        {% if page.omnibus-site-logo-gradient == false %}
+        <div class="p-2 px-4 text-center">
+        {% elsif page.omnibus-site-main-color-custom %}
+        <div class="p-2 px-4 text-center omnibus-gradient-header-custom">
+        {% elsif page.omnibus-site-logo-gradient == true %}
         <div class="p-2 px-4 text-center omnibus-gradient-header-light">
+        {% endif %}
             <a class="d-block mt-4 mb-2" href="{{ site.url }}">
                 <img id="home-banner-logo" class="img-fluid" src="{{ site.organization-logo-nav | relative_url }}"
                     alt="{{ site.title | escape }} home">
