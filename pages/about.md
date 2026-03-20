@@ -2,6 +2,19 @@
 title: About
 layout: about
 permalink: /about.html
+
+omnibus-site-theme: dark # toggle: dark | light
+omnibus-site-logo-gradient: true # toggle boolean
+omnibus-site-main-color-custom: # insert color hex code
+omnibus-site-bg-color-custom: # insert color hex code
+omnibus-site-grainy-bg: false # toggle boolean
+omnibus-site-grainy-bg-colors: 
+  omnibus-gradient-color-2: 
+  omnibus-gradient-color-3:
+  omnibus-gradient-color-4:
+#insert 3 custom color hexcodes to layer in grainy svg animation over omnibus-site-bg-color-custom
+omnibus-bg-image: #insert filepath
+
 # include CollectionBuilder info at bottom
 credits: true
 # featured-image value can be one objectid for a photo object in this collection, a relative path to an image in this project, or a full url to any image. If left blank, no featured image will appear at top of About page.

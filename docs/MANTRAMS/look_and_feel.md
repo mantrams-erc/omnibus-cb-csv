@@ -8,7 +8,7 @@ With [_base.scss](/_sass/_base.scss), [_pages.scss](/_sass/_pages.scss) and [_th
 
 While CollectionBuilder allows for some [customization](https://collectionbuilder.github.io/cb-docs/docs/theme/), the OMnibus of MANTRAMS design requires more advanced manipulation of the provided template. Some of it is done by changing values in the CollectionBuilder SCSS ([`/_sass`](/_sass/) - not [`cb.scss`](/assets/css/cb.scss)) - and page templates ([`/_layouts`](/_layouts/)), but the bulk of customization is placed in [`_custom.scss`](/_sass/_custom.scss).
 
-**To indicate our OMnibus custom classes in the HTML source code, the naming scheme `omnibus-[name]` is used.**
+**To indicate our OMnibus custom CSS classes or [jekyll custom front matter variables](https://jekyllrb.com/docs/front-matter/) in the HTML source code, the naming scheme `omnibus-[name]` is used.**
 
 ## Preparatory work: Utilizing CollectionBuilder built in customization options
 
