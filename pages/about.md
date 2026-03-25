@@ -3,39 +3,43 @@ title: About
 layout: about
 permalink: /about.html
 
-omnibus-site-theme: dark # toggle: dark | light
-omnibus-site-logo-gradient: true # toggle boolean
-omnibus-site-main-color-custom: # insert color hex code
-omnibus-site-bg-color-custom: # insert color hex code
-omnibus-site-grainy-bg: false # toggle boolean
-omnibus-site-grainy-bg-colors: 
-  omnibus-gradient-color-2: 
-  omnibus-gradient-color-3:
-  omnibus-gradient-color-4:
+omnibus-site-theme: light # toggle: dark | light
+omnibus-site-logo-gradient: false # toggle boolean
+omnibus-site-main-color-custom: "#000000" # insert color hex code
+omnibus-site-bg-color-custom: "#f533ff" # insert color hex code
+omnibus-site-grainy-bg: true # toggle boolean 
+omnibus-gradient-color-2: "#e51542ff"
+omnibus-gradient-color-3: "#ff9d00"
+omnibus-gradient-color-4: "#d95436"
 #insert 3 custom color hexcodes to layer in grainy svg animation over omnibus-site-bg-color-custom
-omnibus-bg-image: #insert filepath
+omnibus-bg-image: "'/assets/img/MANTRAMS_TF3_GOET_RC6_ RAMANANDI-L11009783.jpg'" #insert filepath
 
 # include CollectionBuilder info at bottom
 credits: true
 # featured-image value can be one objectid for a photo object in this collection, a relative path to an image in this project, or a full url to any image. If left blank, no featured image will appear at top of About page.
-about-featured-image: demo_031
+about-featured-image:
 # set background-position for featured image, "center", "top", "bottom"
-position: bottom
+position:
 # major heading to display over featured image
-heading: About the Collection
+heading:
 # paragraph text below heading in featured image
 sub-heading: 
 # additional padding added to the feature to increase size. Give value in em or px, e.g. "5em".
-padding: 6em
+padding:
 # Edit the markdown on in this file to describe your collection
 # Look in _includes/feature for options to easily add features to the page
 ---
 
-  {% include index/time.html %}
-
-  {% include index/content.html %}
-
 ## About CollectionBuilder CSV
+
+<div class="row">
+  <div class="col-md-6 h-100">
+  {% include index/content.html %}
+  </div>
+<div class="col-md-6 h-100">
+  {% include index/time.html %}
+  </div>
+</div>
 
 This demo collection features items from the University of Idaho Library's [Digital Collections](https://www.lib.uidaho.edu/digital/), and is build using [CollectionBuilder-CSV](https://github.com/CollectionBuilder/collectionbuilder-csv).
 

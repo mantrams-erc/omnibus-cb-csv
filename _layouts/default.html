@@ -1,17 +1,92 @@
 <!doctype html>
 <html lang="en" class="h-100">
-  <head prefix="og: http://ogp.me/ns#">
-    {% include head/head.html %}
-  </head>
-  <body class="d-flex flex-column h-100">
+
+<head prefix="og: http://ogp.me/ns#">
+  {% include head/head.html %}
+  <style>
+    /* set layout variables of page wide scope */
+    {% if page.omnibus-site-bg-color-custom %}
+    .omnibus-bg {
+      background-color: {{ page.omnibus-site-bg-color-custom }};
+    }
+    {% endif %}
+    
+    {% if page.omnibus-site-grainy-bg == true %}
+    .omnibus-bg-grainy {
+      background-image: url('/assets/svg/grain.svg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    {% endif %}
+
+    {% if page.omnibus-bg-image %}
+    .omnibus-bg-image {
+      background-image: url({{ page.omnibus-bg-image }});
+      background-size: cover;
+      background-attachment: fixed;
+    }
+    {% endif %}
+
+    {% if page.omnibus-site-main-color-custom %}
+    .omnibus-gradient-header-custom {
+    background-image: radial-gradient(ellipse 800px 500px at calc(50% + 200px) -100px,
+            {{page.omnibus-site-main-color-custom}}B3 33%,
+            {{page.omnibus-site-main-color-custom}}80 61%,
+            {{page.omnibus-site-main-color-custom}}1A 90%,
+            {{page.omnibus-site-main-color-custom}}00 100%);
+          }
+    {% endif %}
+  </style>
+</head>
+
+<body id="omnibus-body" class="d-flex flex-column h-100">
+  <!-- set background on this level -->
+  {% if page.omnibus-site-bg-color-custom and page.omnibus-site-grainy-bg == true %}
+  <div class="omnibus-bg-grainy">
+  {% elsif page.omnibus-bg-image %}
+  <div class="omnibus-bg-image">
+  {% elsif page.omnibus-site-bg-color-custom %}
+  <div class="omnibus-bg">
+  {% else %} 
+  <div class="bg-light">
+  {% endif %}
     <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
+    {% if page.layout == "home-infographic" %}
     {% include collection-banner.html %}
     {% include collection-nav.html %}
     <main id="maincontent" role="main" class="flex-shrink-0">
       {{ content }}
     </main>
-    {% include footer.html %}
-    {% include foot.html %}
-    {% include scroll-to-top.html %}
-  </body>
+    {% else %}
+    <!-- set logo gradient on this level to fade into the background -->
+    {% if page.omnibus-site-theme == "dark" %}
+    {% if page.omnibus-site-logo-gradient == false %}
+    <div class="">
+    {% elsif page.omnibus-site-main-color-custom %}
+    <div class="omnibus-gradient-header-custom">
+    {% elsif page.omnibus-site-logo-gradient == true %}
+    <div class="omnibus-gradient-header-dark">
+    {% endif %}
+    {% elsif page.omnibus-site-theme == "light" %}
+    {% if page.omnibus-site-logo-gradient == false %}
+    <div class="">
+    {% elsif page.omnibus-site-main-color-custom %}
+    <div class="omnibus-gradient-header-custom">
+    {% elsif page.omnibus-site-logo-gradient == true %}
+    <div class="omnibus-gradient-header-light">
+    {% endif %}
+    {% endif %}
+    {% include collection-banner.html %}
+    {% include collection-nav.html %}
+    <main id="maincontent" role="main" class="flex-shrink-0">
+      {{ content }}
+    </div>
+    {% endif %}
+  </div>
+  {% include footer.html %}
+  {% include foot.html %}
+  {% include scroll-to-top.html %}
+</body>
+
 </html>

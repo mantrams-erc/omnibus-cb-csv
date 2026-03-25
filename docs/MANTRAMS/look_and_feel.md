@@ -20,4 +20,6 @@ In this section, we describe changes to the general architecture of the website,
 
 ## Custom surgery: Reworking the CollectionBuilder templates
 
+
+
 ## _custom.scss code design
