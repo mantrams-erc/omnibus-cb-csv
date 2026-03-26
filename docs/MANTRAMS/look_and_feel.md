@@ -20,6 +20,20 @@ In this section, we describe changes to the general architecture of the website,
 
 ## Custom surgery: Reworking the CollectionBuilder templates
 
+YAML to set for individual page layout
 
+```
+omnibus-site-theme: # toggle: dark | light
+omnibus-site-logo-gradient: # toggle boolean
+omnibus-site-main-color-custom: "" # insert color hex code
+omnibus-site-bg-color-custom: "" # insert color hex code
+omnibus-site-grainy-bg: # toggle boolean 
+omnibus-gradient-color-2: ""
+omnibus-gradient-color-3: ""
+omnibus-gradient-color-4: ""
+#insert 3 custom color hexcodes to layer in grainy svg animation over omnibus-site-bg-color-custom
+omnibus-bg-image: "''" #insert filepath unix style
+omnibus-suppress-footer: # toggle boolean
+```
 
 ## _custom.scss code design

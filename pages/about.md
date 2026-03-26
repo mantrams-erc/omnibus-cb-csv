@@ -5,14 +5,7 @@ permalink: /about.html
 
 omnibus-site-theme: light # toggle: dark | light
 omnibus-site-logo-gradient: false # toggle boolean
-omnibus-site-main-color-custom: "#000000" # insert color hex code
-omnibus-site-bg-color-custom: "#f533ff" # insert color hex code
-omnibus-site-grainy-bg: true # toggle boolean 
-omnibus-gradient-color-2: "#e51542ff"
-omnibus-gradient-color-3: "#ff9d00"
-omnibus-gradient-color-4: "#d95436"
-#insert 3 custom color hexcodes to layer in grainy svg animation over omnibus-site-bg-color-custom
-omnibus-bg-image: "'/assets/img/MANTRAMS_TF3_GOET_RC6_ RAMANANDI-L11009783.jpg'" #insert filepath
+omnibus-suppress-footer: true
 
 # include CollectionBuilder info at bottom
 credits: true
