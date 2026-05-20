@@ -20,10 +20,10 @@ source-code: https://github.com/mantrams-erc/omnibus-cb-csv
 # title of site appears in banner
 title: OMnibus of MANTRAMS
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: A digital archive of mantras past and present
+tagline: an online archive of mantras past and present
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "The OMnibus  is a digital archive of mantras past and present, developed as part of the MANTRAMS research project (ERC Synergy Grant ID 101118934)."
+description: "The OMnibus of MANTRAMS is a digital archive of mantras past and present, developed as part of the MANTRAMS research project (ERC Synergy Grant ID 101118934)."
 # keywords, a short list of subjects describing the collection, separated by semicolon, to appear in rich markup
 keywords: cultural-heritage; ethnography; religious-studies; south-asia
 # creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
@@ -34,7 +34,7 @@ author: mantrams-erc
 #
 # Set the metadata for your collection (the name of the CSV file in your _data directory that describes the objects in your collection) 
 # Use the filename of your CSV **without** the ".csv" extension! E.g. _data/demo-metadata.csv --> "demo-metadata"
-metadata: demo-compoundobjects-metadata 
+metadata: demo-metadata_Edda-adhoc
 # page generation settings [optional!]
 # [optional: only used if you need to tweak CB defaults or generate from more than one data file]
 # page_gen:
@@ -55,6 +55,7 @@ organization-link: https://mantrams.eu
 # Add logo image links if you would like them to appear in banner and footer. Delete or leave blank to remove logos.
 organization-logo-banner: assets/img/mantrams-logo.png
 organization-logo-nav: assets/img/omnibus-logo.png
+organization-logo-nav-white: assets/img/omnibus-logo-white.png
 
 ##########
 # ROBOTS EXCLUDE

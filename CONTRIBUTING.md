@@ -11,7 +11,7 @@ While we try to be disruptive in academic spaces with our interdisciplinary, de-
 ## Project resources
 
 - General project contact: [mantrams.stb@univie.ac.at](mailto:mantrams.stb@univie.ac.at)
-- Lead Developer contact: [Edda Schwarzkopf](mailto:edda.schwarzkop@uni-tuebingen.de)
+- Lead Developer contact: [Edda Schwarzkopf](mailto:edda.schwarzkopf@uni-tuebingen.de)
 - Cultural Liason contact: [Sahishnu Bhattacharyya](mailto:sahon.bhattacharyya@univie.ac.at)
 - Contact for artistic interventions: [Kanika Pruthi](mailto:kanika.pruthi@univie.ac.at)
 - Mailing list: [Friends of MANTRAMS](https://groups.google.com/g/friends_of_mantrams)

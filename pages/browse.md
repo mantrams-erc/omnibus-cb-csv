@@ -2,6 +2,7 @@
 title: Browse
 layout: browse
 permalink: /browse.html
----
 
-## Browse Items
+omnibus-site-theme: light # toggle: dark | light
+omnibus-site-logo-gradient: false # toggle boolean
+---

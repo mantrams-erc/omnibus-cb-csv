@@ -11,10 +11,10 @@
 
 {%- endcomment -%}
 {%- assign stubs = site.data.config-nav | map: 'stub' | join: ';' -%}
-<div class="card mb-3">
-    <div class="card-body">
-        <{{ include.heading_level | default: 'h2' | strip }} class="card-title h5">Collection as Data</{{ include.heading_level | default: 'h2' | strip }}>
-        <p><small>Download this collection's metadata in a variety of reusable formats.</small></p>
+<div class="card my-3 border-0">
+    <div class="card-body mt-2">
+        <{{ include.heading_level | default: 'h2' | strip }} class="card-title h3 fw-bold">The OMnibus as Data</{{ include.heading_level | default: 'h2' | strip }}>
+        <p class="fs-6 fw-light fst-italic">Download this collection's metadata in a variety of reusable formats</p>
         <p class="card-text text-center">
             <a class="btn btn-sm btn-secondary m-1" href="{{ '/assets/data/metadata.csv' | relative_url }}" download>Metadata CSV</a>
             <a class="btn btn-sm btn-secondary m-1" href="{{ '/assets/data/metadata.json' | relative_url }}" target="_blank">Metadata JSON</a>
