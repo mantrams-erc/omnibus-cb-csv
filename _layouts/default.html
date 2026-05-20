@@ -24,6 +24,7 @@
     .omnibus-bg-image {
       background-image: url({{ page.omnibus-bg-image }});
       background-size: cover;
+      background-position: center top;
       background-attachment: fixed;
     }
     {% endif %}
@@ -51,38 +52,39 @@
   {% else %} 
   <div class="bg-light">
   {% endif %}
-    <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
-    {% if page.layout == "home-infographic" %}
+  <div id="skip-to-content"><a href="#maincontent">Skip to main content</a></div>
+  {% if page.layout == "home-infographic" %}
     {% include collection-banner.html %}
-    {% include collection-nav.html %}
+    <!--{% include collection-nav.html %}-->
     <main id="maincontent" role="main" class="flex-shrink-0">
       {{ content }}
     </main>
-    {% else %}
-    <!-- set logo gradient on this level to fade into the background -->
+  {% else %}
+  <!-- set logo gradient on this level to fade into the background -->
     {% if page.omnibus-site-theme == "dark" %}
-    {% if page.omnibus-site-logo-gradient == false %}
-    <div class="">
-    {% elsif page.omnibus-site-main-color-custom %}
-    <div class="omnibus-gradient-header-custom">
-    {% elsif page.omnibus-site-logo-gradient == true %}
-    <div class="omnibus-gradient-header-dark">
-    {% endif %}
+      {% if page.omnibus-site-logo-gradient == false %}
+      <div class="">
+      {% elsif page.omnibus-site-main-color-custom %}
+      <div class="omnibus-gradient-header-custom">
+      {% elsif page.omnibus-site-logo-gradient == true %}
+      <div class="omnibus-gradient-header-dark">
+      {% endif %}
     {% elsif page.omnibus-site-theme == "light" %}
-    {% if page.omnibus-site-logo-gradient == false %}
-    <div class="">
-    {% elsif page.omnibus-site-main-color-custom %}
-    <div class="omnibus-gradient-header-custom">
-    {% elsif page.omnibus-site-logo-gradient == true %}
-    <div class="omnibus-gradient-header-light">
-    {% endif %}
+      {% if page.omnibus-site-logo-gradient == false %}
+      <div class="">
+      {% elsif page.omnibus-site-main-color-custom %}
+      <div class="omnibus-gradient-header-custom">
+      {% elsif page.omnibus-site-logo-gradient == true %}
+      <div class="omnibus-gradient-header-light">
+      {% endif %}
     {% endif %}
     {% include collection-banner.html %}
-    {% include collection-nav.html %}
+    <!--{% include collection-nav.html %}-->
     <main id="maincontent" role="main" class="flex-shrink-0">
       {{ content }}
+    </main>
     </div>
-    {% endif %}
+  {% endif %}
   </div>
   {% include footer.html %}
   {% include foot.html %}

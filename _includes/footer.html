@@ -14,7 +14,7 @@
                     <h5 class="fw-light">About MANTRAMS</h5>
                     <p class="text-dark fw-light fs-6">“MANTRAMS - Mantras in Religion, Media, and Society in Global
                         Southern Asia” is a six-year research project conducted at the Universities of Vienna,
-                        Oxford,Tübingen and EPHE Paris (runtime 2024-2030). MANTRAMS has received funding from the
+                        Oxford, Tübingen and EPHE Paris (runtime 2024-2030). MANTRAMS has received funding from the
                         European Research Council (ERC) under the European Union’s Synergy Grant programme <a
                             href="https://cordis.europa.eu/project/id/101118934" target="_blank">(ID 101118934)</a>. The
                         OMnibus of MANTRAMS is a core digital output of this research.</p>
@@ -52,14 +52,14 @@
                         With questions, feedback, and concerns, kindly reach out to <a
                             href="mailto:data@mantrams.eu">data@mantrams.eu</a>.
                     </p>
-                    <button type="button" class="btn btn-lg btn-primary text-light mb-3">
+                    <a id="omnibus-github-redirect" href="https://github.com/mantrams-erc/omnibus-cb-csv" role="button" class="btn btn-lg btn-primary text-light mb-3">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-github" viewBox="0 0 16 16" style="vertical-align: middle">
                             <path
                                 d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
                         </svg>
                         <b>omnibus-cb-csv</b>
-                    </button>
+                    </a>
                     <div class="position-bottom">
                         <p class="text-dark" id="footer-credits">
                             <small><em>built with</em>
@@ -119,8 +119,10 @@
         </div>
         {% endunless %}
 
+        {% if page.layout == "home-infographic" %}
         <div class="container col-sm-12 text-center pt-3 pb-1">
             <p class="text-dark fw-light fst-italic">Last updated {{ site.time | date: '%d %B, %Y' }}.</p>
         </div>
+        {% endif %}
 
 </footer>

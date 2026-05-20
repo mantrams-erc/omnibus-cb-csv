@@ -38,4 +38,4 @@ This license does not include external dependencies included in the `assets/lib`
 
 Funded by the European Union. Views and opinions expressed are however those of the author(s) only and do not necessarily reflect those of the European Union or the European Research Council Executive Agency. Neither the European Union nor the granting authority can be held responsible for them.
 
-![ERC Logo](/assets/img/erc-logo.png)
+![ERC Logo](/assets/img/logo/erc-logo.png)

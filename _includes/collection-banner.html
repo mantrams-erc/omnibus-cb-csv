@@ -5,64 +5,40 @@
         background-size: cover;
         background-repeat: no-repeat;
         background-position: {{site.data.theme.home-banner-image-position | default: 'center'}};
+        max-width: 1300px;
+        height: 600px;
+        max-height: 70vh;
     }
 
-    #home-title-box {
-        padding-top: {{site.data.theme.home-title-y-padding | default: '0em'}};
-        padding-bottom: {{site.data.theme.home-title-y-padding | default: '10em'}};
-    }
-
-    @media screen and (max-width: 576px) {
-        #home-title-box {
-            padding-top: min({{site.data.theme.home-title-y-padding | default: '0em'}}, 32vh);padding-bottom: min({{site.data.theme.home-title-y-padding | default: '10em'}}, 32vh);
+    @media screen and (max-width: 767.98px) {
+        #home-banner{
+            height: 60vh;
+            min-height: 300px;
         }
     }
 </style>
 <div id="home-banner" class="container-fluid mb-0 p-0">
-    <div id="home-title-box" class="position-relative">
-        <!-- toggle light and dark theming -->
-        {% if page.omnibus-site-theme == "dark" %}
-        <!-- nested: apply different logo shadow options -->
-        {% if page.omnibus-site-logo-gradient == false %}
-        <div class="p-2 px-4 text-center text-white">
-        {% elsif page.omnibus-site-main-color-custom %}
-        <div class="p-2 px-4 text-center text-white omnibus-gradient-header-custom">
-        {% elsif page.omnibus-site-logo-gradient == true %}
-        <div class="p-2 px-4 text-center text-white omnibus-gradient-header-dark">
-        {% endif %}
-            <a class="d-block mt-4 mb-2" href="{{ site.url }}">
-                <img id="home-banner-logo" class="img-fluid" src="{{ site.organization-logo-nav-white | relative_url }}"
-                    alt="{{ site.title | escape }} home">
-            </a>
-            <p class="fs-4 fw-lighter lh-1">{{ site.tagline }}</p>
-            <!--<p class="fs-4 fw-lighter">an online archive<br/>of mantras past and present</p>-->
-        </div>
-        {% elsif page.omnibus-site-theme == "light" %}
-        <!-- nested: apply different logo shadow options -->
-        {% if page.omnibus-site-logo-gradient == false %}
-        <div class="p-2 px-4 text-center">
-        {% elsif page.omnibus-site-main-color-custom %}
-        <div class="p-2 px-4 text-center omnibus-gradient-header-custom">
-        {% elsif page.omnibus-site-logo-gradient == true %}
-        <div class="p-2 px-4 text-center omnibus-gradient-header-light">
-        {% endif %}
-            <a class="d-block mt-4 mb-2" href="{{ site.url }}">
-                <img id="home-banner-logo" class="img-fluid" src="{{ site.organization-logo-nav | relative_url }}"
-                    alt="{{ site.title | escape }} home">
-            </a>
-            <p class="fs-4 fw-lighter lh-1">{{ site.tagline }}</p>
-            <!--<p class="fs-4 fw-lighter">an online archive<br/>of mantras past and present</p>-->
-        </div>
-        {% endif %}
-        {% unless site.data.theme.featured-image contains '/' %}
-        <div class="position-absolute bottom-0 end-0 px-2 bg-dark-gradient">
-            <a class="text-white fs-6" href="{{ site.data.featured_item.link | relative_url }}"
-                title="{{ site.data.featured_item.alt | escape }}">Featured Image</a>
+    <div class="omnibus-gradient-landing-dark position-relative">
+        <div id="home-title-box" class="w-100 position-absolute bottom-0 start-50 translate-middle-x">
+            <div class="p-2 px-4 text-center text-white">
+                <a class="d-block mt-4 mb-2" href="{{ site.url }}">
+                    <img id="home-banner-logo" class="img-fluid" src="{{ site.organization-logo-nav-white | relative_url }}"
+                        alt="{{ site.title | escape }} home">
+                </a>
+                <p class="fs-4 fw-lighter lh-1">{{ site.tagline }}</p>
+            </div>
+            {% include collection-nav.html %}
+            </div>
+            {% unless site.data.theme.featured-image contains '/' %}
+        <div class="position-absolute top-0 end-0 px-2 bg-dark-gradient">
+                <a class="text-white fs-6" href="{{ site.data.featured_item.link | relative_url }}"
+                    title="{{ site.data.featured_item.alt | escape }}">Featured Image</a>
         </div>{% endunless %}
     </div>
 </div>
 {%- else -%}
 <div class="container-fluid mb-0 p-0">
+    {% unless page.layout == "map" %}
     <!-- toggle light and dark theming -->
         {% if page.omnibus-site-theme == "dark" %}
         <!-- gradient shadow applied in default.html-->
@@ -71,18 +47,16 @@
                 <img id="home-banner-logo" class="img-fluid" src="{{ site.organization-logo-nav-white | relative_url }}"
                     alt="{{ site.title | escape }} home">
             </a>
-            <p class="fs-4 fw-lighter lh-1">{{ site.tagline }}</p>
-            <!--<p class="fs-4 fw-lighter">an online archive<br/>of mantras past and present</p>-->
         </div>
-        {% elsif page.omnibus-site-theme == "light" %}
+        {% else %}
         <div class="p-2 px-4 text-center">
             <a class="d-block mt-4 mb-2" href="{{ site.url }}">
                 <img id="home-banner-logo" class="img-fluid" src="{{ site.organization-logo-nav | relative_url }}"
                     alt="{{ site.title | escape }} home">
             </a>
-            <p class="fs-4 fw-lighter lh-1">{{ site.tagline }}</p>
-            <!--<p class="fs-4 fw-lighter">an online archive<br/>of mantras past and present</p>-->
         </div>
         {% endif %}
+        {% endunless %}
+        {% include collection-nav.html %}
 </div>
 {%- endif -%}

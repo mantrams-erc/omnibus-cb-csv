@@ -3,14 +3,14 @@
     Adds a box to highlight rights information if item has a "rights" or "rightsstatement" field.
 
 {%- endcomment -%}
-<div class="card">
-    <div class="card-header">Rights</div>
-    <div class="card-body">
+<div class="card mt-2">
+    <div class="card-header fw-bold border-0">Rights</div>
+    <div class="card-body fw-light">
         <dl>
             {% if page.rights %}<dt>Rights:</dt>
-            <dd>{{ page.rights }}</dd>{% endif %}
+            <dd class="small">{{ page.rights }}</dd>{% endif %}
             {% if page.rightsstatement %}<dt>Standardized Rights:</dt>
-            <dd><a href="{{ page.rightsstatement }}">{{ page.rightsstatement }}</a>
+            <dd class="small"><a href="{{ page.rightsstatement }}">{{ page.rightsstatement }}</a>
             </dd>{% endif %}
         </dl>
     </div>

@@ -17,6 +17,7 @@ In this section, we describe changes to the general architecture of the website,
 - Until future modes of data exploration have been developed, the modes of access to data have been reduced by deleting the "Subjects" and the "Locations" option from the **navigation** ([`config-nav.html`](/_data/config-nav.csv)).
 - The default location and zoom for the **map** was changed until enough data has been put in to default back to `auto` ([`theme.yml`](\_data\theme.yml)). The Esri Imagery map was chosen as a default to focus on spatiality and situatedness, not on political entities and urban settlements. Later on, more sophisticated GIS and data visualizations will be developed from research questions, data and user queries.
 - To simplify the **Home/Landing Page**, all infographics and statistics have been removed or moved to the About section.
+- Favicon was build using https://favicon.io/favicon-converter/
 
 ## Custom surgery: Reworking the CollectionBuilder templates
 
@@ -31,7 +32,7 @@ omnibus-site-grainy-bg: # toggle boolean
 omnibus-gradient-color-2: ""
 omnibus-gradient-color-3: ""
 omnibus-gradient-color-4: ""
-#insert 3 custom color hexcodes to layer in grainy svg animation over omnibus-site-bg-color-custom
+#insert 3 custom color hexcodes to layer in grainy svg animation over omnibus-site-bg-color-custom: ""
 omnibus-bg-image: "''" #insert filepath unix style
 omnibus-suppress-footer: # toggle boolean
 ```

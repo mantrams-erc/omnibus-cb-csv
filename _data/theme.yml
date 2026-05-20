@@ -9,13 +9,13 @@
 # featured image is used in home page banner and in meta markup to represent the collection
 # use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
 #featured-image: /assets/img/MANTRAMS_TF3_GOET_RC6_ RAMANANDI-L11009783.jpg
-featured-image: /assets/img/Shirt_Edit.jpeg
+featured-image: assets/img/MANTRAMS_TF3_Larios_RC6_OmTruck_20250802.jpg
 #featured-image: /assets/img/Manuscript01_101_Healing soil.jpg
 featured-image-alt-text: # add alt text if using url for featured-image (objectid will be automatic from metadata)
 # optional: add extra padding around collection title for a larger image feature. 
 home-title-y-padding: # the margin from the top your title portion will appear.
 # optional: change position of background image, center, top, bottom
-home-banner-image-position: top # Default is top
+home-banner-image-position: center # Default is top
 
 
 ##########
@@ -31,7 +31,7 @@ default-sort-field: # if a value is entered here, it must match one of the field
 # ITEM PAGE
 #
 # see _data/metadata-config.csv to define the metadata fields that will display.
-browse-buttons: true # true / false, adds previous/next arrows to items, but increases build time
+browse-buttons: false # true / false, adds previous/next arrows to items, but increases build time
 
 ##########
 # SUBJECTS PAGE

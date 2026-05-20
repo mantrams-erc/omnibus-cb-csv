@@ -9,13 +9,15 @@
     <dl>
         {% for f in fields %}{% if page[f.field] %}
         <dt class="field">{{ f.display_name }}:</dt>
-        <dd class="field-value">
+        <dd class="field-value fw-light mb-4">
             {% if f.browse_link == "true" %}
             {% assign topics = page[f.field] | split: ";" %}
             {% for t in topics %}
             <a class="me-3" href="{{ t | strip | url_param_escape | prepend: ':' | prepend: f.field | prepend: '/browse.html#' | relative_url }}">{{ t | strip }}</a>
             {% endfor %}
             {% elsif f.external_link == "true" %}
+            <a href="{{ page[f.field] }}">{{ page[f.field] }}</a>
+            {% elsif f.doi == "true" %}
             <a href="{{ page[f.field] }}">{{ page[f.field] }}</a>
             {% else %}
             {{ page[f.field] | replace: '""','"' }}{% endif %}

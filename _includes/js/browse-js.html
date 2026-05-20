@@ -56,21 +56,21 @@ function makeCard(obj) {
     const placeholder = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3 2'%3E%3C/svg%3E";
     const itemHref = `{{ '/items/' | relative_url }}${ obj.parent ? obj.parent + ".html#" + obj.id : obj.id + ".html"}`;
     
-    let card = '<div class="item col-lg-4 col-md-6 mb-2"><div class="card">';
-    
-    // Image or icon
-    if(obj.img) {
-        card += `<a href="${itemHref}"><img class="card-img-top lazyload" src="${placeholder}" data-src="${obj.img}" alt="${obj.alt || obj.title}"></a>`;
-    }
-    
-    // Title
-    card += `<div class="card-body text-center"><h3 class="card-title h4"><a href="${itemHref}" class="text-dark">${obj.title}</a></h3>`;
+    let card = '<div class="col"><div class="card h-100">';
     
     // Icon for items without images
     if(!obj.img) {
         const thumbIcon = getIcon(obj.display_template, obj.format, "thumb");
-        if(thumbIcon) card += `<p><a href="${itemHref}">${thumbIcon}</a></p>`;
+        if(thumbIcon) card += `<div class="card-body text-center"><p><a href="${itemHref}">${thumbIcon}</a></p>`;
     }
+
+    // Image or icon
+    if(obj.img) {
+        card += `<div class="card-body text-center"><a href="${itemHref}"><img class="w-100 lazyload mb-3 " src="${placeholder}" data-src="${obj.img}" alt="${obj.alt || obj.title}"></a>`;
+    }
+    
+    // Title
+    card += `<h3 class="card-title h4"><a href="${itemHref}" class="text-dark fw-bold">${obj.title}</a></h3>`;
     
     // Field data
     card += '<p class="card-text">';
@@ -81,7 +81,7 @@ function makeCard(obj) {
         const btns = obj[{{ f.field | jsonify }}].split(";");
         btns.forEach(btn => {
             if(btn.trim()) {
-                card += `<a class="btn btn-sm btn-secondary m-1 text-wrap" href="{{ page.url | relative_url }}#{{ f.field }}:${encodeURIComponent(btn.trim())}">${btn.trim()}</a>`;
+                card += `<a class="btn btn-sm btn-dark m-1 text-wrap" href="{{ page.url | relative_url }}#{{ f.field }}:${encodeURIComponent(btn.trim())}">${btn.trim()}</a>`;
             }
         });
         {% else %}
@@ -92,13 +92,15 @@ function makeCard(obj) {
     {% endunless %}{% endfor %}
     card += '</p>';
     
+    card += `</div><div class="card-footer bg-transparent border-0 text-center my-3">`;
+
     // Media type badge
     if(obj.display_template) {
         const mediaIcon = getIcon(obj.display_template, obj.format, "hidden");
-        card += `<p class="card-text"><small><a class="btn btn-sm btn-outline-secondary" href="{{ page.url | relative_url }}#display_template:${encodeURIComponent(obj.display_template)}">${obj.display_template.toUpperCase().replace("_"," ")} ${mediaIcon}</a></small></p>`;
+        card += `<p class="card-text"><small><a class="btn btn-sm btn-outline-primary" href="{{ page.url | relative_url }}#display_template:${encodeURIComponent(obj.display_template)}">${obj.display_template.toUpperCase().replace("_"," ")} ${mediaIcon}</a></small></p>`;
     }
-    
-    card += `<hr><a href="${itemHref}" class="btn btn-sm btn-light" title="link to ${obj.title}">View Full Record</a></div></div></div>`;
+        
+    card += `<hr/><small><a href="${itemHref}" title="link to ${obj.title}">View Full Record »</a></small></div></div></div>`;
     return card;
 }
 
@@ -681,7 +683,7 @@ function displayActiveFilters(searchCriteria) {
     if (!searchCriteria?.length) return;
     
     const container = document.createElement('div');
-    container.className = 'd-flex flex-wrap align-items-center';
+    container.className = 'd-flex flex-wrap justify-content-center';
     
     // Create filter buttons
     searchCriteria.forEach((criteria, index) => {

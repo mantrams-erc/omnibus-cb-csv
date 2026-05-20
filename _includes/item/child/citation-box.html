@@ -4,11 +4,11 @@
 
 {%- endcomment -%}
 <div class="card mb-2">
-    <div class="card-header">Attribution</div>
-    <div class="card-body">
+    <div class="card-header fw-bold border-0">Attribution</div>
+    <div class="card-body fw-light">
         <dl>
             <dt>Citation:</dt>
-            <dd>"{{ child.title | default: page.title }}", {{ site.title }}, {% if site.organization-name %}{{ site.organization-name }}, {% endif %}<a href="{{ page.url | absolute_url }}#{{ child.objectid }}">{{ page.url | absolute_url }}#{{ child.objectid }}</a></dd>
+            <dd class="small">"{{ child.title | default: page.title }}", {{ site.title }}, {% if site.organization-name %}{{ site.organization-name }}, {% endif %}<a href="{{ page.url | absolute_url }}#{{ child.objectid }}">{{ page.url | absolute_url }}#{{ child.objectid }}</a></dd>
         </dl>
     </div>
 </div>
