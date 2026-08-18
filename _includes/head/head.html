@@ -20,6 +20,11 @@
 
 <!-- load style sheets -->
 {% if site.data.theme.font-cdn %}{{ site.data.theme.font-cdn }}{%- endif -%}
+{% if page.layout == "home-infographic" and site.data.theme.featured-image %}
+<link rel="preload"
+      as="image"
+      href="{{ site.data.featured_item.src | relative_url }}">
+{% endif %}
 <link rel="stylesheet" href="{% if site.data.theme.bootswatch %}https://cdn.jsdelivr.net/npm/bootswatch@5.3.8/dist/{{ site.data.theme.bootswatch }}/bootstrap.min.css{% else %}{{ site.lib-assets | default: '/assets/lib' | relative_url }}/bootstrap.min.css{% endif %}" type="text/css">
 {% if page.layout == 'data' %}<link rel="stylesheet" type="text/css" href="{{ site.lib-assets | default: '/assets/lib' | relative_url }}/datatables/datatables.min.css">{%- endif -%}
 {% if page.layout == 'map' %}<link rel="stylesheet" href="{{ site.lib-assets | default: '/assets/lib' | relative_url }}/leaflet/leaflet.css">
