@@ -4,7 +4,7 @@
         window.open("{{ '/search/index.html' | relative_url }}?q=" + encodeURIComponent(query), "_self" );
     }
 </script>
-<form class="form-inline ms-5 my-2 my-lg-0 d-none d-md-inline" role="search" id="search" onsubmit="site_search(); return false;">
+<form class="form-inline ms-5 my-0 d-none d-md-flex align-items-center" role="search" id="search" onsubmit="site_search(); return false;">
     <div class="input-group">
         <input id="site-search" class="form-control fw-light" type="text" placeholder="Search the data" aria-label="Search box">
         <button class="btn btn-light border border-muted" type="submit">
