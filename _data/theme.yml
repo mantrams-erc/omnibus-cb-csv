@@ -9,7 +9,7 @@
 # featured image is used in home page banner and in meta markup to represent the collection
 # use either an objectid (from an item in this collect), a relative location of an image in this repo, or a full url to an image elsewhere
 #featured-image: /assets/img/MANTRAMS_TF3_GOET_RC6_ RAMANANDI-L11009783.jpg
-featured-image: assets/img/MANTRAMS_TF3_Larios_RC6_OmTruck_20250802.jpg
+featured-image: assets/img/MANTRAMS_TF3_Larios_RC6_OmTruck_20250802_small.jpg
 #featured-image: /assets/img/Manuscript01_101_Healing soil.jpg
 featured-image-alt-text: # add alt text if using url for featured-image (objectid will be automatic from metadata)
 # optional: add extra padding around collection title for a larger image feature. 

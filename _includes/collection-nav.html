@@ -29,7 +29,9 @@
                             </span>
 
                         </a>
-                        {%- else -%}
+                    </div>
+                    {%- else -%}
+                    <div class="col nav-item p-0 d-flex omnibus-mobile-nav-item">
                         <li class="nav-item dropdown">
                             {% assign navChildren = site.data.config-nav | where_exp: 'item', 'item.dropdown_parent ==
                             nav.display_name' %}
@@ -44,9 +46,9 @@
                                 {% endfor %}
                             </div>
                         </li>
-                        {% endif %}
-                        {%- endfor -%}
                     </div>
+                    {% endif %}
+                    {%- endfor -%}
 
                     {% include nav-search-lunr.html %}
 

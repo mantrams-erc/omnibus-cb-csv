@@ -17,6 +17,12 @@ item-meta: true
         </a>{% endunless %}
     </h2>
 
+    {% if page.tk_modal == 'warning' %}
+    <div class="row justify-content-center">
+        {% include item/access-warning.html %}
+    </div>
+    {% endif %}
+
     <div class="row justify-content-center">
         <div class="col-12">
 
