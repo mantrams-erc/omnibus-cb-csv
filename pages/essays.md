@@ -104,3 +104,30 @@ omnibus-site-bg-color-custom: "#D1B9A9"
   </div>
   </div>
 </div>
+
+<!-- Toms Soundmaps -->
+
+<div class="card mb-4 border-0 omnibus-essay-teaser">
+<div class="card-header fw-light fst-italic border-0">
+    Coming Soon
+  </div>
+  <div class="row">
+  <div class="col-12 col-md-6 col-lg-4">
+  <div class="card-body">
+    <h5 class="card-title fw-bold fs-3 d-block d-lg-none">Sketching Sacred Soundspace</h5>
+    <p class="card-text fw-light fs-5 d-block d-lg-none">Soundmaps of the Kataragama Temple Complex</p>
+    <p class="card-text fw-light fs-6 d-block d-lg-none">by Tom Peterson</p>
+<img class="omnibus-essay-thumbnail" src="/assets/img/thumbnails/tom_pathway_thumb.jpg" alt="...">
+    </div>
+  </div>
+  <div class="col-12 col-md-6 col-lg-8">
+  <div class="card-body">
+    <h5 class="card-title fw-bold fs-3 d-none d-lg-block">Sketching Sacred Soundspace</h5>
+    <p class="card-text fw-light fs-5 d-none d-lg-block">Soundmaps of the Kataragama Temple Complex</p>
+    <p class="card-text fw-light fs-6 d-none d-lg-block">by Tom Peterson</p>
+    <p class="card-text fw-light fs-6">The multi-religious Kataragama temple complex in southeastern Sri Lanka forms one of the country’s most significant and sonically rich religious sites. Consisting of more than twenty temples and shrines—many of which sit within earshot of one another—Kataragama’s religious diversity creates a shared and negotiated sonic environment in which sounds that might otherwise be heard in isolation are frequently heard simultaneously. This resource presents a series of interactive digital soundmaps developed with participants, helping to convey how they as attendees, workers, or officiants at the temple complex perceive and listen to Kataragama’s dense multi-religious sonic environment. The maps allow users to see and hear Kataragama according to participants’ perspectives, while also intimating wider insights around the place of sound in overlaps between Hindu, Buddhist, Islamic, and Adivasi religious practices in Sri Lanka more broadly.</p>
+    <p class="card-text fw-light fs-6 fst-italic">Subscribe to the <a href="https://groups.google.com/g/friends_of_mantrams">MANTRAMS Mailing List</a> to be notified upon release.</p>
+    </div>
+  </div>
+  </div>
+</div>
